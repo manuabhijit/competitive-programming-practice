@@ -6,7 +6,7 @@ import random
 # Common Typed Variables
 true = True
 false = False
-mone = None
+none = None
 lenght = len
 
 # Common Indexing Variables
