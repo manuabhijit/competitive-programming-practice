@@ -32,11 +32,6 @@ PI = 22/7
 pi = round(PI, 2)
 
 
-# Input Reader 1
-def inputReader_1():
-    print("a")
-
-
 def outputWriter_2(result, outputPath="output.txt"):
     global outputWriter_2_execution_counter
 
@@ -58,3 +53,25 @@ def outputWriter_2(result, outputPath="output.txt"):
         filePtr = open(outputPath, 'w')
         filePtr.write(str(result) + '\n')
         filePtr.close()
+
+
+def readLine(dt=int):
+    return input().strip() if dt == str else int(input().strip())
+
+
+def readLineMap(dt=int, sep=''):
+    return input().split() if dt == str else map(dt, input().split())
+
+
+def readLineArray(dt=int, sep=''):
+    return input().split() if dt == str else list(map(dt, input().split()))
+
+# MY ACTUAL CODE
+
+
+# END OF MY ACTUAL CODE
+# PADDING
+# PADDING
+# PADDING
+# PADDING
+# EOF
