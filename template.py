@@ -1,4 +1,9 @@
 #!/bin/python3
+# Standard Python Template
+# Coded By: Abhijit Srivastava
+# Year: 2020
+# Stage Name: sweetpoison
+
 import math
 import os
 import random
@@ -14,6 +19,7 @@ index = 0
 i, j, k = (0, 0, 0)
 summation = 0
 product = 1
+testCaseCount = 1
 
 # Common Usage Blank Variables
 arr = []
@@ -59,15 +65,25 @@ def readLine(dt=int):
     return input().strip() if dt == str else int(input().strip())
 
 
-def readLineMap(dt=int, sep=''):
-    return input().split() if dt == str else map(dt, input().split())
+def readLineMap(dt=int, sep=' '):
+    return input().split() if dt == str else map(dt, input().split(sep))
 
 
-def readLineArray(dt=int, sep=''):
-    return input().split() if dt == str else list(map(dt, input().split()))
+def readLineArray(dt=int, sep=' '):
+    return input().split() if dt == str else list(map(dt, input().split(sep)))
+
+
+def writeLineArray(list_of_ints, sep=' '):
+    print(sep.join([str(i) for i in list_of_ints]))
+
 
 # MY ACTUAL CODE
 
+# Get testcase count
+# testCaseCount = readLine()
+
+for testCaseIndex in range(testCaseCount):
+    pass
 
 # END OF MY ACTUAL CODE
 # PADDING
